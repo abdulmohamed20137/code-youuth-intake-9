@@ -9,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://kit.fontawesome.com/7d1d35e180.css" crossorigin="anonymous">
 </head>
 <body>
  <section class="header">
     <nav>
        <a href="index.html"><img src="img/6130b8fd19b055000483bbb1.png"></a> 
-       <div class="nav-links">
+       <div class="nav-links" id="navlinks">
+        <i class="fa-thin fa-xmark" onclick="hidemenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
@@ -22,15 +24,70 @@
                 <li><a href="">CONTACT</a></li>
             </ul>
        </div>
+       <i class="fa-solid fa-bars" onclick="showmenu()"></i>
     </nav>
 
 <div class="text-box">
     <h1>KOBE BRYANT</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repellendus ratione, delectus assumenda eos beatae dicta quis, consequuntur eum, voluptatibus maiores nisi enim aliquid impedit quasi a reprehenderit expedita deserunt!</p>
-    <a href="">Learn More</a>
+    <p><q>I can't relate to lazy people. We don't speak the same language. I don't understand you. I don't want to understand you.</q></p>
+    <a href=""class="hero-btn">Learn More</a>
 </div>
  </section>
+<!-- History -->
+<section class="HISTORY">
+    <h1>Chronicles of the Black Mamba</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis molestias atque excepturi iusto, in ex nisi nobis obcaecati, harum praesentium est deleniti! Fugit beatae molestiae vero atque placeat neque. Nobis!</p>
+    <div class="row">
+        <div class="order">
+            <h3>Kid from Phillie</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur voluptate porro suscipit. Rerum dolore quasi incidunt repellat nihil nemo, fugit veniam, debitis, eum asperiores labore facere a possimus molestiae!</p>
+        </div>
+        <div class="order">
+            <h3>Dynasty</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur voluptate porro suscipit. Rerum dolore quasi incidunt repellat nihil nemo, fugit veniam, debitis, eum asperiores labore facere a possimus molestiae!</p>
+        </div>
+        <div class="order">
+            <h3>Black Mamba</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus consequuntur voluptate porro suscipit. Rerum dolore quasi incidunt repellat nihil nemo, fugit veniam, debitis, eum asperiores labore facere a possimus molestiae!</p>
+        </div>
+    </div>
+</section>
+<!-- career -->
+<section class="career">
+    <h1>Career</h1>
+    <p>Lorem ipsum dolor sit amet</p>
+    <div class="row">
+        <div class="career-col">
+            <img src="img/1200px-Los_Angeles_Lakers_Wordmark_Logo_2001-current.svg.png">
+            <div class="layer">
+                <h3>5 time champion</h3>
+            </div>
+            <div class="career-col">
+                <img src="img/1200px-Los_Angeles_Lakers_Wordmark_Logo_2001-current.svg.png">
+                <div class="layer">
+                    <h3>5 time champion</h3>
+                </div>
+                <div class="career-col">
+                    <img src="img/1200px-Los_Angeles_Lakers_Wordmark_Logo_2001-current.svg.png">
+                    <div class="layer">
+                        <h3>5 time champion</h3>
+                    </div>
+        </div>
+    </div>
+</section>
 
+
+ <!-- java -->
+ <script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu(){
+        navlinks.style.right = "0"; 
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+ </script>
 
 
 
